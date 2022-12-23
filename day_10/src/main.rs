@@ -40,9 +40,9 @@ fn increment_clock(cycle_number: &mut i32, register_x: i32, part_1: &mut i32) {
     // Draw pixel
     let current_pixel = *cycle_number - 1;
     if (current_pixel % 40 - register_x).abs() <= 1 {
-        print!("#");
+        print!("█");
     } else {
-        print!(".");
+        print!(" ");
     }
 
     // New line every 40 cycles
